@@ -3,7 +3,7 @@ services:
   hazelcast-member:
     image: hazelcast/hazelcast:4.1.1
     environment:
-      - "JAVA_OPTS=-Xmx500M -Dhazelcast.shutdownhook.policy=GRACEFUL -Dhazelcast.config=/opt/hazelcast/config_ext/hazelcast.xml -Dhazelcast.local.publicAddress=localhost:5699"
+      - "JAVA_OPTS=-Xmx250m -Dhazelcast.shutdownhook.policy=GRACEFUL -Dhazelcast.config=/opt/hazelcast/config_ext/hazelcast.xml -Dhazelcast.local.publicAddress=localhost:5699"
     ports:
       - 5699:5699
     volumes:
